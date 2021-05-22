@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../codearea.css";
+
 const CodeArea = () => {
   return (
     <section className="codeArea">

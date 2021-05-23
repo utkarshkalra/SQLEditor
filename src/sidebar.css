@@ -8,8 +8,6 @@ aside.sidebar > .content {
   background-color: #444;
   color: #eee;
   width: 50vw;
-
-  display: none;
 }
 
 .iconbar {
@@ -17,6 +15,32 @@ aside.sidebar > .content {
   height: 100%;
   background-color: #555;
   color: #eee;
+}
+.btn {
+  background: transparent;
+  color: #eee;
+  border: none;
+}
+.icon {
+  font-size: 1.8rem;
+  padding-top: 0.3rem;
+}
+
+.foldername {
+  background-color: #333;
+  width: 50vw;
+  font-size: 0.7rem;
+}
+
+.filenames {
+  margin-left: 0.8rem;
+}
+
+.filenames > li {
+  list-style: none;
+}
+.file > svg > path {
+  stroke: rgb(65, 191, 233);
 }
 @media screen and (min-width: 900px) {
   aside.sidebar > .content {

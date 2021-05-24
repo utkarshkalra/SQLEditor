@@ -27,6 +27,7 @@ const CodeArea = () => {
     query,
     setQuery,
   } = useGlobalContext();
+
   const [list, setList] = useState(getlocalStorage);
 
   const handleSubmit = (e) => {

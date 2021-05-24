@@ -8,6 +8,10 @@ const AppProvider = ({ children }) => {
   const [filename, setFilename] = useState("");
   const [outputTitle, setOutputTitle] = useState("Output");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [history, setHistory] = useState(false);
+  const [query, setQuery] = useState("");
+  const [showSidebar, setShowSidebar] = useState(false);
 
   const showData = useCallback(() => {
     const url = `https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/csv/${filename}.csv`;
@@ -17,7 +21,6 @@ const AppProvider = ({ children }) => {
         download: true,
         complete: function (items) {
           let itemarr = items.data;
-          console.log(itemarr.length);
           const n = itemarr.length;
           itemarr = itemarr.slice(0, n - 1);
           setData(itemarr);
@@ -37,9 +40,18 @@ const AppProvider = ({ children }) => {
         loading,
         setLoading,
         data,
+        setData,
         setFilename,
         outputTitle,
         setOutputTitle,
+        error,
+        setError,
+        history,
+        setHistory,
+        query,
+        setQuery,
+        showSidebar,
+        setShowSidebar,
       }}
     >
       {children}

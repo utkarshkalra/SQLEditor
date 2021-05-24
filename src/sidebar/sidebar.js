@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import "../sidebar.css";
+import React from "react";
+import "./sidebar.css";
 import { AiOutlineFile } from "react-icons/ai";
 import Files from "./files";
+import { useGlobalContext } from "../context";
 const SideBar = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
-
+  const { showSidebar, setShowSidebar } = useGlobalContext();
   return (
     <aside className="sidebar">
       <div className="iconbar">
         <button
-          className="btn icon"
+          className={showSidebar ? "btn icon active-icon" : "btn icon"}
           onClick={() => setShowSidebar(!showSidebar)}
         >
           <AiOutlineFile />

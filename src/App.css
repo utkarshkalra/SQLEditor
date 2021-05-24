@@ -1,3 +1,7 @@
+:root {
+  --accentcolor: rgb(0, 157, 209);
+}
+
 html,
 body {
   margin: 0;
@@ -7,33 +11,56 @@ body {
   font-family: sans-serif;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.title {
-  background-color: #888;
-  color: #eee;
-}
-.title > h4 {
-  padding: 0.2rem 0;
-  text-align: center;
-}
-
 main {
   background-color: #333;
   color: #eee;
-  height: 100vh;
+  height: 97.5vh;
   margin-left: 10vw;
 }
 
-.codearea {
-  height: 50%;
-}
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 764px) {
+  html,
+  body {
+    font-size: 1.2rem;
+  }
   main {
-    margin-left: 32vw;
+    margin-left: 300px;
+  }
+
+  main.changemargin {
+    margin-left: 50px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border: 0px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--accentcolor);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accentcolor);
+  }
+  ::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0);
   }
 }

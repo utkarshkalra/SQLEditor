@@ -6,12 +6,12 @@ import { useGlobalContext } from "../context";
 
 const Files = () => {
   const [showFiles, setShowFiles] = useState(true);
-  const { setFilename, setOutputTitle } = useGlobalContext();
+  const { setError, setFilename, setOutputTitle } = useGlobalContext();
 
   return (
     <div className="filearea">
       <p className="foldername" onClick={() => setShowFiles(!showFiles)}>
-        <AiOutlineFolder /> CSV files
+        <AiOutlineFolder /> CSV_files
       </p>
       {showFiles && (
         <ul className="filenames">
@@ -21,6 +21,7 @@ const Files = () => {
                 <button
                   className="file btn"
                   onClick={() => {
+                    setError(false);
                     setFilename(csvfile);
                     setOutputTitle(`${csvfile}.csv`);
                   }}

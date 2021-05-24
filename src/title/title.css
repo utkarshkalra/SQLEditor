@@ -1,0 +1,9 @@
+.title {
+  background-color: #888;
+  color: #eee;
+}
+.title > h4 {
+  padding: 0.2rem 0;
+  text-align: center;
+  min-height: 2.5vh;
+}

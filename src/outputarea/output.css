@@ -19,6 +19,7 @@
 .tablearea > table {
   border-collapse: collapse;
   width: max-content;
+  min-width: 100%;
   border-bottom: 1px solid #eee;
 }
 table * {

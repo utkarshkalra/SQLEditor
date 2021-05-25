@@ -43,6 +43,7 @@ It is a Web app that takes SQL queries as Input and returns the result according
   </div>
   <div id ="reactdev">
     <h4>React Developer tools</h4>
+    <p>It worked quite similarly as the previous one. Although I used it to check which react component is taking long to render and I found out that at first when the App loads the AppProvider is taking the longest to render and while using the App Table component is the one that takes quite long as compared to others.</p>
     <img src="https://github.com/utkarshkalra/image/blob/main/profiler1.png" alt="profiler">
   <img src="https://github.com/utkarshkalra/image/blob/main/profiler.png" alt="profiler">
   </div>

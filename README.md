@@ -3,7 +3,7 @@
 It is a Web app that takes SQL queries as Input and returns the result accordingly.<br>
 *Load Time : 0.877sec (when connected to a network connection with speed = 7.9Mbps)
 
-## Here's a link for the editor [link](https://react-sql-editor.netlify.app/)
+## Here's a link for the editor: [link](https://react-sql-editor.netlify.app/)
 
 # Content
 
@@ -18,7 +18,7 @@ It is a Web app that takes SQL queries as Input and returns the result according
   <p>As we can see in the picture given below, The app is divided into three main sections: Code Area, Output Area, and Sidebar. Code Area takes input and when Run is pressed the Output area shows the output accordingly. The sidebar shows the available databases and the tables in them. The next section shows the code structure of the app.</p>
   <img src="https://github.com/utkarshkalra/image/blob/main/appscreenshot.png" alt="App">
   <h4>Code Structure</h4>
-  <p>following two images shows the code structure for the app. As we can see the app is divided into four components: Title, CodeArea, OutputArea, loading and Sidebar</p>
+  <p>following two images shows the code structure for the app. As we can see the app is divided into five components: Title, CodeArea, OutputArea, loading and Sidebar</p>
  
   <img align="center" width="40%" src="https://github.com/utkarshkalra/image/blob/main/codestructure.png" alt="codestructure">
   <img align="center" width="40%" src="https://github.com/utkarshkalra/image/blob/main/codestructure2.png" alt="codestructure">

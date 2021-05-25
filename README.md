@@ -1,6 +1,7 @@
 # SQL Editor
 
-It is a Web app that takes SQL queries as Input and returns the result accordingly.
+It is a Web app that takes SQL queries as Input and returns the result accordingly.<br>
+*Load Time : 0.74sec (when connected to a network connection with speed = 7.9Mbps)
 
 ## Here's a link for the editor [link](https://react-sql-editor.netlify.app/)
 
@@ -9,7 +10,6 @@ It is a Web app that takes SQL queries as Input and returns the result according
 <ul>
   <li><a href="#about">About the app</a></li>
   <li><a href="#load">Load Time of the App</a></li>
-  <li><a href="#Areasofimprovement">Areas of Improvement</a></li>
 </ul>
 
 <div id="About">
@@ -25,14 +25,35 @@ It is a Web app that takes SQL queries as Input and returns the result according
 </div>
 
 <div id="load">
-  <h2>About</h2>
-    <img src="https://github.com/utkarshkalra/image/blob/main/chromdevtool.png" alt="devtools">
+  <h2>Page Load Time</h2>
+  I read a lot of articles to learn calculating the Page load time because this was something new to me. In the end, I came up with three possible ways to calculate the page load time.
+  <ul>
+  <li><a href="#chromedev">Using Chrome Dev Tools (performance)</a></li>
+  <li><a href="#reactdev">using React Developer Tool extenion (profiler)</a></li>
+  <li><a href="#pageloadextension">Page load time (chrome extension)</a></li>
+</ul>
+  After studying all three methods I used all them to get an average of page load time of the App.
+  
+  <div id ="chromedev"> 
+    <h4>Chrome Developer Tool</h4>
+    <p>In chrome dev Tools there is a performance tab which is used to test the performance of the App.
+    The summary Output is shown below.</p>
+  <img src="https://github.com/utkarshkalra/image/blob/main/chromdevtool.png" alt="devtools">
   <img src="https://github.com/utkarshkalra/image/blob/main/chromedevtool2.png" alt="devtools">
-  <img src="https://github.com/utkarshkalra/image/blob/main/profiler1.png" alt="profiler">
+  </div>
+  <div id ="reactdev">
+    <h4>React Developer tools</h4>
+    <img src="https://github.com/utkarshkalra/image/blob/main/profiler1.png" alt="profiler">
   <img src="https://github.com/utkarshkalra/image/blob/main/profiler.png" alt="profiler">
+  </div>
+  <div id ="pageloadextension">
+    <h4>Page load Extension </h4>
+    <p>There is an extension available for calculating page load time of the app.<a href="https://chrome.google.com/webstore/detail/page-load-time/fploionmjgeclbkemipmkogoaohcdbig">link</a> So I used it and refreshed the page multiple times and noted down the load time </p>
+  
+  </div>
+   
+  
 </div>
 
-<div id="Areasofimprovement">
-  <h2>About</h2>
     
 </div>

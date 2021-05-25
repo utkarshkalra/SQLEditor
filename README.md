@@ -1,7 +1,7 @@
 # SQL Editor
 
 It is a Web app that takes SQL queries as Input and returns the result accordingly.<br>
-*Load Time : 0.74sec (when connected to a network connection with speed = 7.9Mbps)
+*Load Time : 0.877sec (when connected to a network connection with speed = 7.9Mbps)
 
 ## Here's a link for the editor [link](https://react-sql-editor.netlify.app/)
 
@@ -49,10 +49,10 @@ It is a Web app that takes SQL queries as Input and returns the result according
   </div>
   <div id ="pageloadextension">
     <h4>Page load Extension </h4>
-    <p>There is an extension available for calculating page load time of the app.<a href="https://chrome.google.com/webstore/detail/page-load-time/fploionmjgeclbkemipmkogoaohcdbig">link</a> So I used it and refreshed the page multiple times and noted down the load time </p>
+    <p>There is an extension available for calculating page load time of the app(<a href="https://chrome.google.com/webstore/detail/page-load-time/fploionmjgeclbkemipmkogoaohcdbig">link</a>). So I used it and refreshed the page multiple times and noted down the load time </p>
   
   </div>
-   
+  <h3>Load time: 0.877sec <h3>
   
 </div>
 
